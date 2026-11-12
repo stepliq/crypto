@@ -1,0 +1,12 @@
+Тест 2.1. PKI
+https://forms.yandex.ru/cloud/6444b0d4c417f30ed9b4ebe3
+
+Тест 2.2. Эллиптические кривые
+https://forms.yandex.ru/cloud/644f879b068ff02bbe56fb7f
+
+Тест 2.3. MAC
+https://forms.yandex.ru/cloud/6abbcc4c49363949332be53b
+
+Тест 2.4. Распределение ключей
+https://forms.yandex.ru/cloud/6ac4b23d49363990e9dec0a6
+
