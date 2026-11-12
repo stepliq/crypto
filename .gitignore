@@ -1,24 +1,69 @@
+# Byte-compiled / cache
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+*.manifest
+*.spec
 
+# Virtual environments
 .venv/
 venv/
 env/
+ENV/
 
+# Testing / coverage
 .pytest_cache/
+.tox/
+.nox/
 htmlcov/
 .coverage
 .coverage.*
 .pytest/
+coverage.xml
+*.cover
+.hypothesis/
 
-*.cast
-
+# Type checkers / linters
 .mypy_cache/
 .ruff_cache/
+.pytype/
+.pyre/
 
+# Jupyter
+.ipynb_checkpoints/
+
+# Demo recordings
+*.cast
+
+# Course materials / documents
+*.pdf
+*.PDF
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs / temp
+*.log
+*.tmp
+*.temp
+.cache/
+
+# OS / editors
 .idea/
 .vscode/
 *.swp
+*.swo
+*~
 .DS_Store
+Thumbs.db
+
+# Pi agent local task artifacts
+.pi/
