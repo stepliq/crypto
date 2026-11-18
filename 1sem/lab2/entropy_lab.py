@@ -4,6 +4,7 @@ import logging
 import math
 import random
 import sys
+import time
 from collections import Counter
 from pathlib import Path
 
@@ -176,7 +177,13 @@ def cmd_entropy(path: Path, top: int) -> None:
 
 @cli.command("demo")
 @click.option("-n", "--size", type=int, default=200_000, show_default=True, help="Длина каждого образца в байтах.")
-@click.option("--seed", type=int, default=42, show_default=True, help="Seed ГПСЧ для воспроизводимости.")
+@click.option(
+    "--seed",
+    type=int,
+    default=lambda: int(time.time()),
+    show_default="current unix time",
+    help="Seed ГПСЧ (по умолчанию — текущее unix-время).",
+)
 def cmd_demo(size: int, seed: int) -> None:
     """Задача 3: сгенерировать образцы и сопоставить энтропии."""
     out_dir = Path("samples")
